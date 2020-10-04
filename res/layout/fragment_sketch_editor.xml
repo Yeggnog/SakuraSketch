@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.example.sakurasketch.SketchEditView
+                android:id="@+id/edit_canvas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_grid"/>
+            <LinearLayout
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/color_button"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/color_button"
+                    android:layout_margin="4dp"/>
+                <TextView
+                    android:id="@+id/size_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="21sp"
+                    android:layout_margin="6dp"/>
+                <Button
+                    android:id="@+id/palette_button"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/palette_icon"
+                    android:layout_gravity="left"
+                    android:text="A" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/erase_button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/erase_icon"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/layer_name_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Layer0"
+                    android:layout_gravity="center_vertical|right"
+                    android:textSize="21sp"
+                    android:layout_margin="6dp"/>
+                <Button
+                    android:id="@+id/layer_button"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/layer_icon"
+                    android:layout_gravity="right"
+                    android:text="A" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <GridLayout
+            android:id="@+id/palette_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:columnCount="3"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="invisible">
+            <Button
+                android:id="@+id/color1_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"/>
+            <Button
+                android:id="@+id/color2_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp" />
+            <Button
+                android:id="@+id/color3_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp" />
+            <Button
+                android:id="@+id/color4_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp" />
+            <Button
+                android:id="@+id/color5_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp" />
+            <Button
+                android:id="@+id/color6_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp" />
+        </GridLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

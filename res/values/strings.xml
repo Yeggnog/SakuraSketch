@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SakuraSketch</string>
+    <string name="sketch_name_hint">Enter a name for this sketch</string>
+    <string name="sketch_name_label">NAME</string>
+    <string name="sketch_details_label">DETAILS</string>
+    <string name="begin_button">Begin</string>
+    <string name="author_text">Jeffrey Collins 2020</string>
+    <string name="save_toast">Sketch saved successfully.</string>
+    <string name="new_sketch">New Sketch</string>
+    <string name="save_sketch">Save Sketch</string>
+    <string name="item_exit">Exit Editor</string>
+    <string name="rename_sketch">Rename Sketch</string>
+    <string name="delete_sketch">Delete Sketch</string>
+    <string name="export_sketch">Export Sketch</string>
+    <string name="export_done_toast">File exported successfully.</string>
+    <string name="export_error_toast">An error occurred and the file could not be exported.</string>
+    <string name="export_permissions">To export a sketch, SakuraSketch needs storage permissions.</string>
+    <string name="export_already_exists">A file with this name already exists. Please choose a new filename.</string>
+    <string name="export_warning">A file with this name already exists. Do you want to overwrite it?</string>
+</resources>
